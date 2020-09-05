@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 // import UseState from "./components/useState";
 // import UseEffect from "./components/useEffect";
+// import UseRef from "./components/useRef";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <h1>React hooks</h1>
       {/* <UseState /> */}
       {/* <UseEffect /> */}
+      {/* <UseRef /> */}
     </div>
   );
 }
