@@ -6,7 +6,7 @@ export default function ItemList({ getItems }) {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        const newItems = getItems(100);// the parameter that we use in getItems function is generateItems = useCallback((parameter))
+        const newItems = getItems(100);// the parameter 100 that we use in getItems function is generateItems = useCallback((parameter))
         setItems(newItems);
     }, [getItems]);
 
