@@ -6,6 +6,7 @@ export default function Navbar() {
 
     return (
         <React.Fragment>
+
             <nav className="navbar sticky-top navbar-dark bg-dark">
                 <NavLink to="/" className="navbar-brand">React hooks</NavLink>
                 <ul className="nav justify-content-end">
@@ -30,7 +31,7 @@ export default function Navbar() {
                     <li className="nav-item">
                         <NavLink to="/useContext" className="nav-link">UseContext</NavLink>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <NavLink to="/" className="nav-link">1</NavLink>
                     </li>
                     <li className="nav-item">
@@ -38,7 +39,7 @@ export default function Navbar() {
                     </li>
                     <li className="nav-item">
                         <NavLink to="/" className="nav-link">1</NavLink>
-                    </li>
+                    </li> */}
                 </ul>
 
             </nav>
