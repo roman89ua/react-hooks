@@ -3,7 +3,8 @@ import "./App.css";
 // import UseState from "./components/useState";
 // import UseEffect from "./components/useEffect";
 // import UseRef from "./components/useRef";
-import UseMemo from "./components/useMemo";
+// import UseMemo from "./components/useMemo";
+// import UseCallback from "./components/useCallback";
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
       {/* <UseState /> */}
       {/* <UseEffect /> */}
       {/* <UseRef /> */}
-      <UseMemo />
+      {/* <UseMemo /> */}
+      {/* <UseCallback /> */}
+
     </div>
   );
 }
