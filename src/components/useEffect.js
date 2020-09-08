@@ -39,6 +39,14 @@ const UseEffect = () => {
         y: event.clientY,
       });
     });
+    return () => {
+      window.removeEventListener("mousemove", (event) => {
+        setPos({
+          x: event.clientX,
+          y: event.clientY,
+        });
+      });
+    };
   }, []);
 
   return (
