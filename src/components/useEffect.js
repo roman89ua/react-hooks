@@ -14,6 +14,12 @@ const UseEffect = () => {
   const setTasks = () => {
     setType("todos");
   };
+  const setMouseCordinates = (event) => {
+    setPos({
+      x: event.clientX,
+      y: event.clientY,
+    });
+  };
 
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/${type}`)
@@ -25,19 +31,9 @@ const UseEffect = () => {
   }, [type]);
 
   useEffect(() => {
-    window.addEventListener("mousemove", (event) => {
-      setPos({
-        x: event.clientX,
-        y: event.clientY,
-      });
-    });
+    window.addEventListener("mousemove", setMouseCordinates);
     return () => {
-      window.removeEventListener("mousemove", (event) => {
-        setPos({
-          x: event.clientX,
-          y: event.clientY,
-        });
-      });
+      window.removeEventListener("mousemove", setMouseCordinates);
     };
   }, []);
 
