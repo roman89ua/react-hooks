@@ -9,6 +9,7 @@ import UseCallback from "./components/useCallback";
 import UseReducer from "./components/useReducer";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Clock from "./components/Clock";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           <Route component={UseCallback} path="/useCallback" />
           <Route component={UseReducer} path="/useReducer" />
         </Switch>
+      </div>
+      <div className="fixed-bottom text-right text-black-50">
+        <Clock />
       </div>
     </BrowserRouter>
   );

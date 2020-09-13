@@ -15,10 +15,6 @@ const UseEffect = () => {
     setType("todos");
   };
 
-  // useEffect(() => {
-  //   console.log("render");
-  // });
-
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/${type}`)
       .then((response) => response.json())
@@ -27,10 +23,6 @@ const UseEffect = () => {
       console.log("clear type");
     };
   }, [type]);
-
-  useEffect(() => {
-    console.log("componentDidMount");
-  }, []);
 
   useEffect(() => {
     window.addEventListener("mousemove", (event) => {
