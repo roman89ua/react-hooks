@@ -49,15 +49,12 @@ export default function Navbar() {
               UseReducer
             </NavLink>
           </li>
-          {/* <li className="nav-item">
-                        <NavLink to="/" className="nav-link">1</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink to="/" className="nav-link">1</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink to="/" className="nav-link">1</NavLink>
-                    </li> */}
+          <li className="nav-item">
+            <NavLink to="/useCustomHook" className="nav-link">
+              UseCustomHook
+            </NavLink>
+          </li>
+
         </ul>
       </nav>
     </React.Fragment>

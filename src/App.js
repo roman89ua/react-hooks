@@ -11,6 +11,7 @@ import UseReducer from "./components/useReducer";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Clock from "./components/Clock";
+import UseCustomHook from "./components/useCustomHook/UseCustomHook";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
           <Route component={UseCallback} path="/useCallback" />
           <Route component={UseContext} path="/useContext" />
           <Route component={UseReducer} path="/useReducer" />
+          <Route component={UseCustomHook} path="/useCustomHook" />
+
         </Switch>
       </div>
       <div className="fixed-bottom text-right text-black-50">
