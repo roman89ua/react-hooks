@@ -40,6 +40,11 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li className="nav-item">
+            <NavLink to="/useContext" className="nav-link">
+              UseContext
+            </NavLink>
+          </li>
+          <li className="nav-item">
             <NavLink to="/useReducer" className="nav-link">
               UseReducer
             </NavLink>

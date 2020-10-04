@@ -6,6 +6,7 @@ import UseEffect from "./components/useEffect";
 import UseRef from "./components/useRef";
 import UseMemo from "./components/useMemo";
 import UseCallback from "./components/useCallback";
+import UseContext from './components/UseContext/UseContext';
 import UseReducer from "./components/useReducer";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -23,6 +24,7 @@ function App() {
           <Route component={UseRef} path="/useRef" />
           <Route component={UseMemo} path="/useMemo" />
           <Route component={UseCallback} path="/useCallback" />
+          <Route component={UseContext} path="/useContext" />
           <Route component={UseReducer} path="/useReducer" />
         </Switch>
       </div>
